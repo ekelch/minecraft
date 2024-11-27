@@ -7,10 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "CMAKE/FindPackageHandleStandardArgs.cmake"
+  "CMAKE/FindPackageMessage.cmake"
   "CMAKE/FindSDL2.cmake"
   "CMAKE/FindSDL2Mixer.cmake"
   "CMAKE/FindSDL2TTF.cmake"
   "CMAKE/FindSDL2_IMAGE.cmake"
+  "CMAKE/FindVulkan.cmake"
   "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeSystem.cmake"
@@ -28,8 +31,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Compiler/GNU.cmake"
-  "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
-  "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/FindPackageMessage.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Apple-Clang-C.cmake"

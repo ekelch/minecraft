@@ -98,6 +98,7 @@ bin/minecraft: /opt/homebrew/lib/libSDL2_ttf.dylib
 bin/minecraft: /opt/homebrew/lib/libSDL2_ttf.dylib
 bin/minecraft: /opt/homebrew/lib/libSDL2_image.dylib
 bin/minecraft: /opt/homebrew/lib/libSDL2_mixer.dylib
+bin/minecraft: /usr/local/lib/libvulkan.dylib
 bin/minecraft: CMakeFiles/minecraft.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/evankelch/Programming/minecraft/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/minecraft"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minecraft.dir/link.txt --verbose=$(VERBOSE)

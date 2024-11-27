@@ -243,6 +243,18 @@ SDL2_INCLUDE_DIR:PATH=/opt/homebrew/include/SDL2
 //Where the SDL2 Library can be found
 SDL2_LIBRARY:STRING=/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2.dylib;-framework Cocoa
 
+//Path to a program.
+Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=/usr/local/bin/glslangValidator
+
+//Path to a program.
+Vulkan_GLSLC_EXECUTABLE:FILEPATH=/usr/local/bin/glslc
+
+//Path to a file.
+Vulkan_INCLUDE_DIR:PATH=/usr/local/include
+
+//Path to a library.
+Vulkan_LIBRARY:FILEPATH=/usr/local/lib/libvulkan.dylib
+
 //Value Computed by CMake
 minecraft_BINARY_DIR:STATIC=/Users/evankelch/Programming/minecraft
 
@@ -404,11 +416,21 @@ FIND_PACKAGE_MESSAGE_DETAILS_SDL2Mixer:INTERNAL=[/opt/homebrew/lib/libSDL2_mixer
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2TTF:INTERNAL=[/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;-framework Cocoa][/opt/homebrew/include/SDL2][v()]
 //Details about finding SDL2_IMAGE
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2_IMAGE:INTERNAL=[/opt/homebrew/lib/libSDL2_image.dylib][/opt/homebrew/include/SDL2][v()]
+//Details about finding Vulkan
+FIND_PACKAGE_MESSAGE_DETAILS_Vulkan:INTERNAL=[/usr/local/lib/libvulkan.dylib][/usr/local/include][cfound components: glslc glslangValidator ][v1.3.290()]
 //ADVANCED property for variable: SDL2Mixer_INCLUDE_DIR
 SDL2Mixer_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SDL2Mixer_LIBRARY
 SDL2Mixer_LIBRARY-ADVANCED:INTERNAL=1
-SDL2TTF_LIBRARY_TEMP:INTERNAL=/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;-framework Cocoa;-framework Cocoa;-framework Cocoa
+SDL2TTF_LIBRARY_TEMP:INTERNAL=/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;/opt/homebrew/lib/libSDL2_ttf.dylib;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa
 SDL2_IMAGE_LIBRARY_TEMP:INTERNAL=/opt/homebrew/lib/libSDL2_image.dylib
-SDL2_LIBRARY_TEMP:INTERNAL=/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2.dylib;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa
+SDL2_LIBRARY_TEMP:INTERNAL=/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2main.a;/opt/homebrew/lib/libSDL2.dylib;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa;-framework Cocoa
+//ADVANCED property for variable: Vulkan_GLSLANG_VALIDATOR_EXECUTABLE
+Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Vulkan_GLSLC_EXECUTABLE
+Vulkan_GLSLC_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Vulkan_INCLUDE_DIR
+Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Vulkan_LIBRARY
+Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 
