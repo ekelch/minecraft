@@ -1,9 +1,18 @@
+#include "SDL_vulkan.h"
+#include <__config>
+#include <iostream>
+#include <istream>
+#include <vulkan/vulkan.h>
+#include <cstdint>
 #include <stdio.h>
 #include "SDL_events.h"
 #include "SDL_render.h"
+#include "fwd.hpp"
+#include "vulkan/vulkan_core.h"
 #include <SDL.h>
 #include <SDL_image.h>
 #include <stdlib.h>
+#include <glm.hpp>
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
@@ -26,6 +35,16 @@ int main(int argc, char *argv[]) {
         printf("Failed to load media!\n");
         return 0;
     }
+
+    uint32_t extensionCount = 0;
+    vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
+
+    std::cout << extensionCount << " extensions supported.\n";
+
+    glm::mat4 matrix;
+    glm::vec4 vec;
+    glm::vec3 test = matrix * vec;
+
     while (!quit) {
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT) {

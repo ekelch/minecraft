@@ -22,12 +22,15 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctype_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/arch.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__availability \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -162,12 +165,17 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/declval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/forward.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__verbose_abort \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cassert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cfloat \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/climits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdint.h \
@@ -182,11 +190,13 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/arm/OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/arm/_structs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/machine/_structs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_mcontext.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc.h \
@@ -278,6 +288,7 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/resource.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/time.h \
@@ -286,9 +297,159 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_neon.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/setup.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/scalar_int_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/scalar_uint_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float2_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float3_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float4_precision.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int2_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int3_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int4_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint2_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint3_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint4_sized.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/common.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/common.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/exponential.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/geometric.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/matrix.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/simd/platform.h \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vector_relational.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/compute_vector_relational.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/_fixes.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/_vectorize.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/compute_common.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/compute_vector_relational.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_common.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_exponential.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_geometric.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_integer.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_matrix.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_packing.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_trigonometric.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_vector_relational.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/qualifier.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/setup.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_half.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_half.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x2.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x3.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x4.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x2.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x3.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x4.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x2.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x3.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x4.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec1.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec1.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec2.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec3.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec4.inl \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/exponential.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/fwd.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/geometric.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/glm.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/integer.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat2x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat2x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat2x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat3x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat3x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat3x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat4x2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat4x3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat4x4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/matrix.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/packing.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/trigonometric.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vec2.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vec3.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vec4.hpp \
+  /Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vector_relational.hpp \
   /opt/homebrew/include/SDL2/SDL.h \
   /opt/homebrew/include/SDL2/SDL_assert.h \
   /opt/homebrew/include/SDL2/SDL_atomic.h \
@@ -338,17 +499,50 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
   /opt/homebrew/include/SDL2/SDL_touch.h \
   /opt/homebrew/include/SDL2/SDL_version.h \
   /opt/homebrew/include/SDL2/SDL_video.h \
+  /opt/homebrew/include/SDL2/SDL_vulkan.h \
   /opt/homebrew/include/SDL2/begin_code.h \
-  /opt/homebrew/include/SDL2/close_code.h
+  /opt/homebrew/include/SDL2/close_code.h \
+  /usr/local/include/vk_video/vulkan_video_codec_av1std.h \
+  /usr/local/include/vk_video/vulkan_video_codec_av1std_decode.h \
+  /usr/local/include/vk_video/vulkan_video_codec_h264std.h \
+  /usr/local/include/vk_video/vulkan_video_codec_h264std_decode.h \
+  /usr/local/include/vk_video/vulkan_video_codec_h264std_encode.h \
+  /usr/local/include/vk_video/vulkan_video_codec_h265std.h \
+  /usr/local/include/vk_video/vulkan_video_codec_h265std_decode.h \
+  /usr/local/include/vk_video/vulkan_video_codec_h265std_encode.h \
+  /usr/local/include/vk_video/vulkan_video_codecs_common.h \
+  /usr/local/include/vulkan/vk_platform.h \
+  /usr/local/include/vulkan/vulkan.h \
+  /usr/local/include/vulkan/vulkan_core.h
 
+
+/usr/local/include/vulkan/vulkan.h:
+
+/usr/local/include/vk_video/vulkan_video_codec_h265std_encode.h:
+
+/usr/local/include/vk_video/vulkan_video_codec_h264std.h:
+
+/usr/local/include/vk_video/vulkan_video_codec_av1std.h:
+
+/opt/homebrew/include/SDL2/close_code.h:
 
 /opt/homebrew/include/SDL2/begin_code.h:
 
+/opt/homebrew/include/SDL2/SDL_vulkan.h:
+
 /opt/homebrew/include/SDL2/SDL_video.h:
 
-/opt/homebrew/include/SDL2/SDL_version.h:
+/usr/local/include/vk_video/vulkan_video_codec_h264std_decode.h:
+
+/opt/homebrew/include/SDL2/SDL_timer.h:
+
+/opt/homebrew/include/SDL2/SDL_stdinc.h:
 
 /opt/homebrew/include/SDL2/SDL_sensor.h:
+
+/opt/homebrew/include/SDL2/SDL_scancode.h:
+
+/opt/homebrew/include/SDL2/SDL_version.h:
 
 /opt/homebrew/include/SDL2/SDL_rwops.h:
 
@@ -356,83 +550,343 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /opt/homebrew/include/SDL2/SDL_rect.h:
 
+/opt/homebrew/include/SDL2/SDL_power.h:
+
+/opt/homebrew/include/SDL2/SDL_platform.h:
+
 /opt/homebrew/include/SDL2/SDL_pixels.h:
 
-/opt/homebrew/include/SDL2/SDL_mutex.h:
+/opt/homebrew/include/SDL2/SDL_mouse.h:
 
 /opt/homebrew/include/SDL2/SDL_misc.h:
 
-/opt/homebrew/include/SDL2/SDL_messagebox.h:
-
-/opt/homebrew/include/SDL2/SDL_locale.h:
-
 /opt/homebrew/include/SDL2/SDL_metal.h:
 
-/opt/homebrew/include/SDL2/SDL_loadso.h:
+/opt/homebrew/include/SDL2/SDL_main.h:
 
-/opt/homebrew/include/SDL2/SDL_keyboard.h:
+/opt/homebrew/include/SDL2/SDL_log.h:
 
-/opt/homebrew/include/SDL2/SDL_hidapi.h:
+/opt/homebrew/include/SDL2/SDL_keycode.h:
+
+/opt/homebrew/include/SDL2/SDL_joystick.h:
+
+/opt/homebrew/include/SDL2/SDL_image.h:
 
 /opt/homebrew/include/SDL2/SDL_haptic.h:
 
+/opt/homebrew/include/SDL2/SDL_guid.h:
+
+/opt/homebrew/include/SDL2/SDL_gesture.h:
+
+/opt/homebrew/include/SDL2/SDL_gamecontroller.h:
+
 /opt/homebrew/include/SDL2/SDL_filesystem.h:
 
-/opt/homebrew/include/SDL2/SDL_config.h:
+/opt/homebrew/include/SDL2/SDL_events.h:
 
-/opt/homebrew/include/SDL2/SDL_atomic.h:
+/opt/homebrew/include/SDL2/SDL_hidapi.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
+/opt/homebrew/include/SDL2/SDL_error.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_neon.h:
+/opt/homebrew/include/SDL2/SDL_endian.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_bf16.h:
+/opt/homebrew/include/SDL2/SDL_cpuinfo.h:
 
-/opt/homebrew/include/SDL2/SDL_touch.h:
+/opt/homebrew/include/SDL2/SDL_clipboard.h:
+
+/opt/homebrew/include/SDL2/SDL_blendmode.h:
+
+/opt/homebrew/include/SDL2/SDL_audio.h:
+
+/opt/homebrew/include/SDL2/SDL.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vec4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/trigonometric.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat4x4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat4x3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat3x2.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat2x4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/integer.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec4.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec3.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x3.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x2.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x4.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x3.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x2.inl:
+
+/opt/homebrew/include/SDL2/SDL_mutex.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x3.inl:
+
+/opt/homebrew/include/SDL2/SDL_keyboard.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x2.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_half.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_half.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/qualifier.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_trigonometric.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/wchar.h:
 
-/opt/homebrew/include/SDL2/SDL_scancode.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_matrix.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_common.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/_fixes.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vector_relational.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/simd/platform.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/matrix.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x4.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/geometric.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/exponential.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x4_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint4_sized.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint3_sized.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int4_sized.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float3_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_setsize.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double4_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_callable.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double3_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool4_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool3_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool2.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x2_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x3.hpp:
+
+/opt/homebrew/include/SDL2/SDL_config.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x3_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x2.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x3_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vec3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/runetype.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x2_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_exponential.inl:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x4_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_dev_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x3_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float4_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec1.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_caddr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdint.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdint:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float2.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_constant_evaluated.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_useconds_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x4.hpp:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_bf16.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x2_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_constructible.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x3_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int32_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/scalar_uint_sized.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x2.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/setup.hpp:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_float2_precision.hpp:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_neon.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/time.h:
 
+/opt/homebrew/include/SDL2/SDL_assert.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/signal.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_final.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_pod.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_wint_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_wchar_t.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x4_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_va_list.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int16_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/type_identity.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat4x2.hpp:
+
+/opt/homebrew/include/SDL2/SDL_touch.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_char.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec1.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_timeval.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/machine/_structs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_time_t.h:
 
-/opt/homebrew/include/SDL2/SDL_system.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x2_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_suseconds_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int8_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x2_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_size_t.h:
 
-/opt/homebrew/include/SDL2/SDL_platform.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/packing.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_sigset_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_convertible.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x2_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/float.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rune_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_integer.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/disjunction.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ucontext.h:
 
@@ -440,15 +894,19 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_pid_t.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_geometric.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_off_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_nlink_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctype_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_intptr_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int32_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/common_reference.h:
 
-/opt/homebrew/include/SDL2/SDL_gamecontroller.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ino_t.h:
 
@@ -456,21 +914,27 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_in_addr_t.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/scalar_int_sized.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_id_t.h:
+
+/opt/homebrew/include/SDL2/SDL_atomic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
-/opt/homebrew/include/SDL2/SDL_mouse.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_setsize.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int2_sized.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cmath:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_set.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_isset.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_def.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_errno_t.h:
 
@@ -480,31 +944,47 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/TargetConditionals.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_t.h:
+
+/opt/homebrew/include/SDL2/SDL_hints.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uid_t.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_gid_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
-/opt/homebrew/include/SDL2/SDL_gesture.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat2x2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/make_signed.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/resource.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_endian.h:
 
@@ -512,35 +992,47 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/strings.h:
 
-/opt/homebrew/include/SDL2/SDL_error.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_move_assignable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/runetype.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_member_pointer.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/float.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/string.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/math.h:
+/opt/homebrew/include/SDL2/SDL_loadso.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_const.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdlib.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc_type.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int64_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/fwd.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdint.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_ptrcheck.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/signal.h:
+/opt/homebrew/include/SDL2/SDL_locale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/invoke.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h:
 
+/usr/local/include/vk_video/vulkan_video_codec_av1std_decode.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_copy_assignable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/arm/_structs.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/glm.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternal.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/_OSByteOrder.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_ptrcheck.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/_OSByteOrder.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h:
 
@@ -548,19 +1040,21 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_union.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdint.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/inttypes.h:
 
-/opt/homebrew/include/SDL2/SDL_thread.h:
+/opt/homebrew/include/SDL2/SDL_quit.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_signed.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/ctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdlib.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_dev_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_volatile.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdio.h:
 
@@ -570,17 +1064,29 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/math.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/inttypes.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdint:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/inttypes.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstddef:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_pointer.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_scalar.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cfloat:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/common.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__verbose_abort:
-
-/opt/homebrew/include/SDL2/SDL_stdinc.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__utility/forward.h:
 
@@ -588,31 +1094,41 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_intmax_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__availability:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__undef_macros:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternalLegacy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint32_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_const.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/void_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc_type.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/void_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/type_list.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_signed.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int4.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/type_identity.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/limits.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/compute_vector_relational.hpp:
+
+/opt/homebrew/include/SDL2/SDL_surface.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_reference.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivial.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/machine/_structs.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/compute_common.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_extent.h:
 
@@ -622,11 +1138,17 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_const_ref.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float3x4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/arch.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/limits.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/common_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h:
 
-/opt/homebrew/include/SDL2/SDL_joystick.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_short.h:
 
@@ -636,9 +1158,7 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/result_of.h:
 
-/opt/homebrew/include/SDL2/close_code.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_useconds_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/endian.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/promote.h:
 
@@ -646,9 +1166,9 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/maybe_const.h:
 
-/opt/homebrew/include/SDL2/SDL_endian.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_vec2.inl:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/make_signed.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_uint2_sized.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mbstate_t.h:
 
@@ -658,11 +1178,7 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp \
 
 src/main.cpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
-
-/opt/homebrew/include/SDL2/SDL_keycode.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x4_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_null.h:
 
@@ -672,39 +1188,61 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double2x3.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int2.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x3_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_key_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_member_object_pointer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_default_constructible.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x3_precision.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_copy_constructible.h:
+
+/opt/homebrew/include/SDL2/SDL_thread.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_constructible.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat3x3.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_standard_layout.h:
+
+/usr/local/include/vk_video/vulkan_video_codec_h265std.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_bool2_precision.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_blksize_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_volatile.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h:
 
-/opt/homebrew/include/SDL2/SDL_main.h:
+/usr/local/include/vulkan/vulkan_core.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_reference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_volatile.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/string.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/wchar.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat2x3.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/alloca.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_pointer.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_pod.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x4_precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/signal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_mcontext.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_object.h:
 
@@ -712,65 +1250,47 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_move_assignable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h:
-
-/opt/homebrew/include/SDL2/SDL_clipboard.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_convertible.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_move_assignable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_member_pointer.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_void.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_integral.h:
-
-/opt/homebrew/include/SDL2/SDL_power.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_specialization.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_function.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_base_of.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_constructible.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_move_assignable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_void.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat3x4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/hash.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_limits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_specialization.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float2x4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/__wctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_default_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_copy_constructible.h:
 
-/opt/homebrew/include/SDL2/SDL_log.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_class.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/alignment_of.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_pointer.h:
-
-/opt/homebrew/include/SDL2/SDL_cpuinfo.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h:
+/usr/local/include/vulkan/vk_platform.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_callable.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_member_function_pointer.h:
 
@@ -778,37 +1298,37 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_bounded_array.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_vector_relational.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
 
-/opt/homebrew/include/SDL2/SDL_surface.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double4x4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x3.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_constructible.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_move_constructible.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config:
 
+/opt/homebrew/include/SDL2/SDL_messagebox.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_compound.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ctype.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_move_assignable.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/common_reference.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/math.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_array.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_scalar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
 
@@ -818,6 +1338,10 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/climits:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/_vectorize.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h:
@@ -826,13 +1350,7 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_swappable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/disjunction.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctype_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/endian.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_implicitly_default_constructible.h:
 
@@ -840,11 +1358,15 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_copy_assignable.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/version:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x4_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/vec2.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_aggregate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/decay.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/hash.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_cv.h:
 
@@ -852,11 +1374,11 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config_site:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_const.h:
 
-/opt/homebrew/include/SDL2/SDL_shape.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat3x4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_clr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_scoped_enum.h:
 
@@ -864,39 +1386,33 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/invoke.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int64_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdint.h:
-
-/opt/homebrew/include/SDL2/SDL_assert.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
-
-/opt/homebrew/include/SDL2/SDL_guid.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/apply_cv.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/dependent_type.h:
 
-/opt/homebrew/include/SDL2/SDL_timer.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int8_t.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/signal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/limits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_const.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_assignable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/endian.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/arch.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_final.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/arm/OSByteOrder.h:
 
@@ -906,77 +1422,19 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/nat.h:
 
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/func_packing.inl:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/types.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_same.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/alloca.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_zero.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/pair.h:
-
-/opt/homebrew/include/SDL2/SDL_hints.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_constant_evaluated.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_intmax_t.h:
-
-/opt/homebrew/include/SDL2/SDL_events.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/appleapiopts.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctermid.h:
-
-/opt/homebrew/include/SDL2/SDL_quit.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int16_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h:
-
-/opt/homebrew/include/SDL2/SDL.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_mcontext.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint8_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h:
-
-/opt/homebrew/include/SDL2/SDL_audio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int8_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_caddr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/lazy.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_assignable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdlib.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_in_port_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/version:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/syslimits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_clock_t.h:
 
@@ -984,9 +1442,49 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint16_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctype.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_same.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_zero.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/pair.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/appleapiopts.h:
+
+/opt/homebrew/include/SDL2/SDL_system.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctermid.h:
+
+/usr/local/include/vk_video/vulkan_video_codec_h264std_encode.h:
+
+/opt/homebrew/include/SDL2/SDL_shape.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/mat4x2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int16_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint8_t.h:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_double2_precision.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/vector_int3_sized.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cassert:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_float4x2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int8_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_char_like_type.h:
 
@@ -994,28 +1492,20 @@ src/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/enable_if.h:
 
-/opt/homebrew/include/SDL2/SDL_blendmode.h:
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/ext/matrix_double3x4.hpp:
+
+/Users/evankelch/VulkanSDK/1.3.290.0/macOS/include/glm/detail/type_mat2x4.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_assignable.h:
 
+/usr/local/include/vk_video/vulkan_video_codec_h265std_decode.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h:
+
+/usr/local/include/vk_video/vulkan_video_codecs_common.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_clr.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/TargetConditionals.h:
-
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternalLegacy.h:
-
-/opt/homebrew/include/SDL2/SDL_image.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/signal.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_seek_set.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
