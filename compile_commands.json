@@ -1,8 +1,8 @@
 [
 {
   "directory": "/Users/evankelch/Programming/minecraft",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/opt/homebrew/include/SDL2 -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/minecraft.dir/src/main.c.o -c /Users/evankelch/Programming/minecraft/src/main.c",
-  "file": "/Users/evankelch/Programming/minecraft/src/main.c",
-  "output": "CMakeFiles/minecraft.dir/src/main.c.o"
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/opt/homebrew/include/SDL2  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/minecraft.dir/src/main.cpp.o -c /Users/evankelch/Programming/minecraft/src/main.cpp",
+  "file": "/Users/evankelch/Programming/minecraft/src/main.cpp",
+  "output": "CMakeFiles/minecraft.dir/src/main.cpp.o"
 }
 ]

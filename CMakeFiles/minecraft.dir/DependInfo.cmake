@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/evankelch/Programming/minecraft/src/main.c" "CMakeFiles/minecraft.dir/src/main.c.o" "gcc" "CMakeFiles/minecraft.dir/src/main.c.o.d"
+  "/Users/evankelch/Programming/minecraft/src/main.cpp" "CMakeFiles/minecraft.dir/src/main.cpp.o" "gcc" "CMakeFiles/minecraft.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
