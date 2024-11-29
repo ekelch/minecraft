@@ -73,15 +73,15 @@ CMakeFiles/minecraft.dir/src/main.cpp.o: CMakeFiles/minecraft.dir/flags.make
 CMakeFiles/minecraft.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/minecraft.dir/src/main.cpp.o: CMakeFiles/minecraft.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/evankelch/Programming/minecraft/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minecraft.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/main.cpp.o -MF CMakeFiles/minecraft.dir/src/main.cpp.o.d -o CMakeFiles/minecraft.dir/src/main.cpp.o -c /Users/evankelch/Programming/minecraft/src/main.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/main.cpp.o -MF CMakeFiles/minecraft.dir/src/main.cpp.o.d -o CMakeFiles/minecraft.dir/src/main.cpp.o -c /Users/evankelch/Programming/minecraft/src/main.cpp
 
 CMakeFiles/minecraft.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evankelch/Programming/minecraft/src/main.cpp > CMakeFiles/minecraft.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evankelch/Programming/minecraft/src/main.cpp > CMakeFiles/minecraft.dir/src/main.cpp.i
 
 CMakeFiles/minecraft.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evankelch/Programming/minecraft/src/main.cpp -o CMakeFiles/minecraft.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evankelch/Programming/minecraft/src/main.cpp -o CMakeFiles/minecraft.dir/src/main.cpp.s
 
 # Object files for target minecraft
 minecraft_OBJECTS = \
@@ -92,12 +92,7 @@ minecraft_EXTERNAL_OBJECTS =
 
 bin/minecraft: CMakeFiles/minecraft.dir/src/main.cpp.o
 bin/minecraft: CMakeFiles/minecraft.dir/build.make
-bin/minecraft: /opt/homebrew/lib/libSDL2main.a
-bin/minecraft: /opt/homebrew/lib/libSDL2.dylib
-bin/minecraft: /opt/homebrew/lib/libSDL2_ttf.dylib
-bin/minecraft: /opt/homebrew/lib/libSDL2_ttf.dylib
-bin/minecraft: /opt/homebrew/lib/libSDL2_image.dylib
-bin/minecraft: /opt/homebrew/lib/libSDL2_mixer.dylib
+bin/minecraft: /usr/local/lib/libSDL3.0.dylib
 bin/minecraft: /usr/local/lib/libvulkan.dylib
 bin/minecraft: CMakeFiles/minecraft.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/evankelch/Programming/minecraft/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/minecraft"

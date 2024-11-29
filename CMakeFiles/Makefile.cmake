@@ -9,10 +9,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "CMAKE/FindPackageHandleStandardArgs.cmake"
   "CMAKE/FindPackageMessage.cmake"
-  "CMAKE/FindSDL2.cmake"
-  "CMAKE/FindSDL2Mixer.cmake"
-  "CMAKE/FindSDL2TTF.cmake"
-  "CMAKE/FindSDL2_IMAGE.cmake"
   "CMAKE/FindVulkan.cmake"
   "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
@@ -31,6 +27,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Compiler/GNU.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/FeatureSummary.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Apple-Clang-C.cmake"
@@ -39,6 +36,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/Darwin.cmake"
   "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/usr/local/lib/cmake/SDL3/SDL3Config.cmake"
+  "/usr/local/lib/cmake/SDL3/SDL3ConfigVersion.cmake"
+  "/usr/local/lib/cmake/SDL3/SDL3headersTargets.cmake"
+  "/usr/local/lib/cmake/SDL3/SDL3sharedTargets-release.cmake"
+  "/usr/local/lib/cmake/SDL3/SDL3sharedTargets.cmake"
+  "/usr/local/lib/cmake/SDL3/SDL3testTargets-release.cmake"
+  "/usr/local/lib/cmake/SDL3/SDL3testTargets.cmake"
   )
 
 # The corresponding makefile is:
