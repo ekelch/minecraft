@@ -10,6 +10,7 @@
 #include <cstdint>
 #include <cstdio>
 #include <cstdlib>
+#include <cstring>
 #include <iostream>
 #include <stdexcept>
 #include <vector>
@@ -28,7 +29,20 @@ bool checkValidationLayerSupport() {
     vkEnumerateInstanceLayerProperties(&layerCount, nullptr);
     std::vector<VkLayerProperties> availableLayers(layerCount);
     vkEnumerateInstanceLayerProperties(&layerCount, availableLayers.data());
-    return false;
+
+    for (const char * vLayer : validationLayers) {
+        bool layerFound = false;
+        for (const auto& layerProperties : availableLayers) {
+            if (strcmp(vLayer, layerProperties.layerName) == 0) {
+                layerFound = true;
+                break;
+            }
+        }
+        if (!layerFound) {
+            return false;
+        }
+    }
+    return true;
 }
 
 class HelloTriangleApplication {
@@ -68,6 +82,9 @@ class HelloTriangleApplication {
             createInstance();
         }
         void createInstance() {
+            if (enableValidationLayers && !checkValidationLayerSupport()) {
+                throw std::runtime_error("Validation layers enabled but not available");
+            }
             VkApplicationInfo appInfo = {};
             appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
             appInfo.pApplicationName = "Hello Minecraft Triangle";
