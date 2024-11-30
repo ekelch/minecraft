@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/minecraft.dir/src/main.cpp.o"
   "CMakeFiles/minecraft.dir/src/main.cpp.o.d"
-  "minecraftd"
-  "minecraftd.pdb"
+  "minecraft"
+  "minecraft.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
