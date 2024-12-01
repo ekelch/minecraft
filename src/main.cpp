@@ -70,6 +70,10 @@ class HelloTriangleApplication {
     private:
         SDL_Window* gWindow;
         VkInstance vkInstance;
+        VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
+        VkDevice logicalDevice = VK_NULL_HANDLE;
+        VkQueue graphicsQueue = VK_NULL_HANDLE;
+
         struct QueueFamilyIndicies {
             std::optional<uint32_t> graphicsFamily;
             bool isComplete() {
@@ -100,6 +104,29 @@ class HelloTriangleApplication {
         void initVulkan() {
             createInstance();
             pickPhysicalDevice();
+            createLogicalDevice();
+        }
+
+        void createLogicalDevice() {
+            QueueFamilyIndicies indicies = findQueueFamilies(physicalDevice);
+
+            VkDeviceQueueCreateInfo logicalQueueCreateInfo {};
+            logicalQueueCreateInfo.sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO;
+            logicalQueueCreateInfo.queueFamilyIndex = indicies.graphicsFamily.value();
+            logicalQueueCreateInfo.queueCount = 1;
+            float queuePriority = 1.0f;
+            logicalQueueCreateInfo.pQueuePriorities = &queuePriority;
+
+            VkPhysicalDeviceFeatures logicalDeviceFeatures;
+            VkDeviceCreateInfo logicalDeviceCreateInfo;
+            logicalDeviceCreateInfo.pQueueCreateInfos = &logicalQueueCreateInfo;
+            logicalDeviceCreateInfo.queueCreateInfoCount = 1;
+            logicalDeviceCreateInfo.pEnabledFeatures = &logicalDeviceFeatures;
+
+            if (vkCreateDevice(physicalDevice, &logicalDeviceCreateInfo, nullptr, &logicalDevice) != VK_SUCCESS) {
+                throw std::runtime_error("Failed to create logical device!\n");
+            }
+            vkGetDeviceQueue(logicalDevice, indicies.graphicsFamily.value(), 0, &graphicsQueue);
         }
 
         void setupDebugMessenger() {
@@ -115,7 +142,6 @@ class HelloTriangleApplication {
         }
 
         void pickPhysicalDevice() {
-            VkPhysicalDevice vkPhysicalDevice = VK_NULL_HANDLE;
             uint32_t deviceCount = 0;
             vkEnumeratePhysicalDevices(vkInstance, &deviceCount, nullptr);
 
@@ -128,12 +154,12 @@ class HelloTriangleApplication {
 
             for (const auto& device : physDevices) {
                 if (isDeviceSuitable(device)) {
-                    vkPhysicalDevice = device;
+                    physicalDevice = device;
                     break;
                 }
             }
 
-            if (vkPhysicalDevice == VK_NULL_HANDLE) {
+            if (physicalDevice == VK_NULL_HANDLE) {
                 throw std::runtime_error("Failed to find suitable physical device");
             }
         }
@@ -218,6 +244,7 @@ class HelloTriangleApplication {
             }
         }
         void cleanup() {
+            vkDestroyDevice(logicalDevice, nullptr);
             vkDestroyInstance(vkInstance, nullptr);
             SDL_DestroyWindow(gWindow);
             gWindow = NULL;
