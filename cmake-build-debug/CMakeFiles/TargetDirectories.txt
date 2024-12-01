@@ -1,0 +1,3 @@
+/Users/evankelch/Programming/minecraft/cmake-build-debug/CMakeFiles/minecraft.dir
+/Users/evankelch/Programming/minecraft/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/evankelch/Programming/minecraft/cmake-build-debug/CMakeFiles/rebuild_cache.dir

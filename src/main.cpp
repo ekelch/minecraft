@@ -2,6 +2,7 @@
 #include "SDL3/SDL_events.h"
 #include "SDL3/SDL_init.h"
 #include "SDL3/SDL_log.h"
+#include "SDL3/SDL_surface.h"
 #include "vulkan/vulkan_core.h"
 #include <SDL3/SDL_vulkan.h>
 #include <SDL3/SDL.h>
@@ -13,14 +14,15 @@
 #include <cstring>
 #include <iostream>
 #include <optional>
+#include <set>
 #include <stdexcept>
 #include <vector>
 #include <vulkan/vulkan.h>
 
-const int SCREEN_WIDTH = 1200;
-const int SCREEN_HEIGHT = 800;
+constexpr int SCREEN_WIDTH = 1200;
+constexpr int SCREEN_HEIGHT = 800;
 
-const std::vector<const char*> validationLayers = {
+const std::vector validationLayers = {
     "VK_LAYER_KHRONOS_validation"
 };
 
@@ -68,25 +70,29 @@ class HelloTriangleApplication {
             cleanup();
         }
     private:
-        SDL_Window* gWindow;
-        VkInstance vkInstance;
-        VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
-        VkDevice logicalDevice = VK_NULL_HANDLE;
-        VkQueue graphicsQueue = VK_NULL_HANDLE;
+        SDL_Window* gWindow = nullptr;
+        VkInstance gInstance = VK_NULL_HANDLE;
+        VkPhysicalDevice mPhysicalDevice = VK_NULL_HANDLE;
+        VkDevice mLogicalDevice = VK_NULL_HANDLE;
+        VkQueue mGraphicsQueue = VK_NULL_HANDLE;
+        VkQueue mPresentQueue = VK_NULL_HANDLE;
+        VkSurfaceKHR mSurface = VK_NULL_HANDLE;
 
         struct QueueFamilyIndicies {
             std::optional<uint32_t> graphicsFamily;
-            bool isComplete() {
-                return graphicsFamily.has_value();
+            std::optional<uint32_t> presentFamily;
+
+            [[nodiscard]] bool isComplete() const {
+                return graphicsFamily.has_value() && presentFamily.has_value();
             };
         };
 
-        bool initSDL() {
+        static bool initSDL() {
             if (!SDL_Init(SDL_INIT_VIDEO)) {
                 SDL_Log( "SDL could not initialize! SDL Error: %s\n", SDL_GetError() );
                 return false;
             }
-            if (!SDL_Vulkan_LoadLibrary(NULL)) {
+            if (!SDL_Vulkan_LoadLibrary(nullptr)) {
                 SDL_Log( "SDL could not load vulkan library! SDL Error: %s\n", SDL_GetError() );
                 return false;
             }
@@ -95,71 +101,101 @@ class HelloTriangleApplication {
 
         bool openWindow() {
             gWindow = SDL_CreateWindow("Vulkan Minecraft", SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_VULKAN);
-            if (gWindow == NULL) {
+            if (gWindow == nullptr) {
                 printf("Failed to create window\n%s\n", SDL_GetError());
                 return false;
             }
             return true;
         }
+
         void initVulkan() {
             createInstance();
+            createSurface();
             pickPhysicalDevice();
             createLogicalDevice();
         }
 
-        void createLogicalDevice() {
-            QueueFamilyIndicies indicies = findQueueFamilies(physicalDevice);
-
-            VkDeviceQueueCreateInfo logicalQueueCreateInfo {};
-            logicalQueueCreateInfo.sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO;
-            logicalQueueCreateInfo.queueFamilyIndex = indicies.graphicsFamily.value();
-            logicalQueueCreateInfo.queueCount = 1;
-            float queuePriority = 1.0f;
-            logicalQueueCreateInfo.pQueuePriorities = &queuePriority;
-
-            VkPhysicalDeviceFeatures logicalDeviceFeatures;
-            VkDeviceCreateInfo logicalDeviceCreateInfo;
-            logicalDeviceCreateInfo.pQueueCreateInfos = &logicalQueueCreateInfo;
-            logicalDeviceCreateInfo.queueCreateInfoCount = 1;
-            logicalDeviceCreateInfo.pEnabledFeatures = &logicalDeviceFeatures;
-
-            if (vkCreateDevice(physicalDevice, &logicalDeviceCreateInfo, nullptr, &logicalDevice) != VK_SUCCESS) {
-                throw std::runtime_error("Failed to create logical device!\n");
+        void createSurface() {
+            if (!SDL_Vulkan_CreateSurface(gWindow, gInstance, nullptr, &mSurface)) {
+                std::cout << "Failed to create surface: " << std::endl << SDL_GetError() << std::endl;
+                throw std::runtime_error("Failed to create surface\n");
             }
-            vkGetDeviceQueue(logicalDevice, indicies.graphicsFamily.value(), 0, &graphicsQueue);
         }
 
-        void setupDebugMessenger() {
+        void createLogicalDevice() {
+            QueueFamilyIndicies indicies = findQueueFamilies(mPhysicalDevice);
+
+            std::vector<VkDeviceQueueCreateInfo> queueCreateInfos;
+            std::set uniqueQueueFamilies = {indicies.graphicsFamily.value(), indicies.presentFamily.value()};
+            float queuePriority = 1.0f;
+            for (uint32_t queueFamily : uniqueQueueFamilies) {
+                VkDeviceQueueCreateInfo queueCreateInfo {};
+                queueCreateInfo.sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO;
+                queueCreateInfo.queueFamilyIndex = queueFamily;
+                queueCreateInfo.queueCount = 1;
+                queueCreateInfo.pQueuePriorities = &queuePriority;
+                queueCreateInfos.push_back(queueCreateInfo);
+            }
+
+            VkPhysicalDeviceFeatures logicalDeviceFeatures{};
+            VkDeviceCreateInfo logicalDeviceCreateInfo{};
+            logicalDeviceCreateInfo.sType = VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO;
+            logicalDeviceCreateInfo.queueCreateInfoCount = static_cast<uint32_t>(queueCreateInfos.size());
+            logicalDeviceCreateInfo.pQueueCreateInfos = queueCreateInfos.data();
+            logicalDeviceCreateInfo.pEnabledFeatures = &logicalDeviceFeatures;
+
+            uint32_t logicalExtensionCount = 1; //temporary !!
+            std::vector<const char*> logicalExtensions(logicalExtensionCount);
+            logicalExtensions[0] = "VK_KHR_portability_subset";
+            logicalDeviceCreateInfo.enabledExtensionCount = logicalExtensionCount;
+            logicalDeviceCreateInfo.ppEnabledExtensionNames = logicalExtensions.data();
+
+            if (enableValidationLayers) {
+                logicalDeviceCreateInfo.enabledLayerCount = static_cast<uint32_t>(validationLayers.size());
+                logicalDeviceCreateInfo.ppEnabledLayerNames = validationLayers.data();
+            } else {
+                logicalDeviceCreateInfo.enabledLayerCount = 0;
+            }
+
+            if (vkCreateDevice(mPhysicalDevice, &logicalDeviceCreateInfo, nullptr, &mLogicalDevice) != VK_SUCCESS) {
+                throw std::runtime_error("Failed to create logical device!\n");
+            }
+            vkGetDeviceQueue(mLogicalDevice, indicies.graphicsFamily.value(), 0, &mGraphicsQueue);
+            vkGetDeviceQueue(mLogicalDevice, indicies.presentFamily.value(), 0, &mPresentQueue);
+        }
+
+        void setupDebugMessenger() const {
             printf("Enable Validation Layers?: %d\n", enableValidationLayers);
-            if (!enableValidationLayers) return;
+            if constexpr (!enableValidationLayers) return;
 
             VkDebugUtilsMessengerCreateInfoEXT createInfo;
             populateDebugMessengerCreateInfo(createInfo);
 
-            if (vkCreateDebugUtilsMessengerEXT(vkInstance, &createInfo, nullptr, nullptr) != VK_SUCCESS) {
+            if (vkCreateDebugUtilsMessengerEXT(gInstance, &createInfo, nullptr, nullptr) != VK_SUCCESS) {
                 throw std::runtime_error("failed to set up debug messenger!");
             }
         }
 
         void pickPhysicalDevice() {
             uint32_t deviceCount = 0;
-            vkEnumeratePhysicalDevices(vkInstance, &deviceCount, nullptr);
+
+            vkEnumeratePhysicalDevices(gInstance, &deviceCount, nullptr);
 
             if (deviceCount == 0) {
                 throw std::runtime_error("Failed to find any physical GPUs with Vulkan support!\n");
             }
 
             std::vector<VkPhysicalDevice> physDevices(deviceCount);
-            vkEnumeratePhysicalDevices(vkInstance, &deviceCount, physDevices.data());
+            vkEnumeratePhysicalDevices(gInstance, &deviceCount, physDevices.data());
 
             for (const auto& device : physDevices) {
                 if (isDeviceSuitable(device)) {
-                    physicalDevice = device;
+                    mPhysicalDevice = device;
                     break;
                 }
             }
 
-            if (physicalDevice == VK_NULL_HANDLE) {
+            if (mPhysicalDevice == VK_NULL_HANDLE) {
                 throw std::runtime_error("Failed to find suitable physical device");
             }
         }
@@ -169,7 +205,7 @@ class HelloTriangleApplication {
             return indicies.isComplete();
         }
 
-        QueueFamilyIndicies findQueueFamilies(VkPhysicalDevice device) {
+        QueueFamilyIndicies findQueueFamilies(VkPhysicalDevice device) const {
             QueueFamilyIndicies indicies;
 
             uint32_t queueFamilyCount = 0;
@@ -182,6 +218,12 @@ class HelloTriangleApplication {
             for (const auto& queueFamily : queueFamilies) {
                 if (queueFamily.queueFlags & VK_QUEUE_GRAPHICS_BIT) {
                     indicies.graphicsFamily = i;
+
+                    VkBool32 presentSupport = false;
+                    vkGetPhysicalDeviceSurfaceSupportKHR(device, i, mSurface, &presentSupport);
+                    if (presentSupport) {
+                        indicies.presentFamily = i;
+                    }
                 }
                 if (indicies.isComplete()) {
                     break;
@@ -203,22 +245,21 @@ class HelloTriangleApplication {
             appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
             appInfo.apiVersion = VK_API_VERSION_1_0;
 
-
-            Uint32 count_instance_extensions;
-            const char * const *instance_extensions = SDL_Vulkan_GetInstanceExtensions(&count_instance_extensions);
-            if (instance_extensions == NULL) { printf("something bad"); }
-
-            int extensionCount = count_instance_extensions + 1;
-            const char **sdlExtensions = (const char **)SDL_malloc(extensionCount * sizeof(const char *));
-            sdlExtensions[0] = VK_EXT_DEBUG_REPORT_EXTENSION_NAME;
-            SDL_memcpy(&sdlExtensions[1], instance_extensions, count_instance_extensions * sizeof(const char*));
+            Uint32 sdlExtCount;
+            const char * const *sdlExtensions = SDL_Vulkan_GetInstanceExtensions(&sdlExtCount);
+            std::vector<const char*> extensions(sdlExtCount);
+            for (int i = 0; i < sdlExtCount; i++) {
+                extensions[i] = sdlExtensions[i];
+            }
+            extensions.emplace_back(VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME);
 
             VkInstanceCreateInfo createInfo = {};
             createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
             createInfo.pApplicationInfo = &appInfo;
-            createInfo.enabledExtensionCount = extensionCount;
-            createInfo.ppEnabledExtensionNames = sdlExtensions;
+            createInfo.enabledExtensionCount = extensions.size();
+            createInfo.ppEnabledExtensionNames = extensions.data();
             createInfo.enabledLayerCount = 0;
+            createInfo.flags |= VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR;
 
             printf("enabled extensions: %d\nvalidation enabled: %d\n", createInfo.enabledExtensionCount, enableValidationLayers);
             if (enableValidationLayers) {
@@ -226,10 +267,9 @@ class HelloTriangleApplication {
                 createInfo.ppEnabledLayerNames = validationLayers.data();
             }
 
-            if (vkCreateInstance(&createInfo, NULL, &vkInstance) != VK_SUCCESS) {
-                std::runtime_error("failed to create vk instance");
+            if (vkCreateInstance(&createInfo, nullptr, &gInstance) != VK_SUCCESS) {
+                throw std::runtime_error("failed to create vk instance");
             }
-            SDL_free(sdlExtensions);
         }
         void mainLoop() {
             SDL_Event e;
@@ -244,10 +284,11 @@ class HelloTriangleApplication {
             }
         }
         void cleanup() {
-            vkDestroyDevice(logicalDevice, nullptr);
-            vkDestroyInstance(vkInstance, nullptr);
+            vkDestroyDevice(mLogicalDevice, nullptr);
+            vkDestroySurfaceKHR(gInstance, mSurface, nullptr);
+            vkDestroyInstance(gInstance, nullptr);
             SDL_DestroyWindow(gWindow);
-            gWindow = NULL;
+            gWindow = nullptr;
             SDL_Quit();
         }
 };
