@@ -18,6 +18,7 @@
 #include <stdexcept>
 #include <vector>
 #include <vulkan/vulkan.h>
+#include <fstream>
 
 constexpr int SCREEN_WIDTH = 1200;
 constexpr int SCREEN_HEIGHT = 800;
@@ -32,7 +33,7 @@ const std::vector validationLayers = {
     const bool enableValidationLayers = true;
 #endif
 
-bool checkValidationLayerSupport() {
+static bool checkValidationLayerSupport() {
     uint32_t layerCount;
     vkEnumerateInstanceLayerProperties(&layerCount, nullptr);
     std::vector<VkLayerProperties> availableLayers(layerCount);
@@ -51,6 +52,24 @@ bool checkValidationLayerSupport() {
         }
     }
     return true;
+}
+
+static std::vector<char> readFile(const std::string& file_name) {
+    std::ifstream file(file_name, std::ios::ate | std::ios::binary);
+
+    if (!file.is_open()) {
+        throw std::runtime_error("Failed to open file: " + file_name);
+    }
+
+    const int64_t file_size = file.tellg();
+    std::vector<char> buffer(file_size);
+    std::cout << "Size of " << file_name << ": " << file_size << std::endl;
+
+    file.seekg(0);
+    file.read(buffer.data(), file_size);
+
+    file.close();
+    return buffer;
 }
 
 void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo) {
@@ -131,6 +150,7 @@ class HelloTriangleApplication {
             createLogicalDevice();
             createSwapChain();
             createSwapChainViews();
+            createGraphicsPipeline();
         }
 
         void createSurface() {
@@ -433,6 +453,44 @@ class HelloTriangleApplication {
                     throw std::runtime_error("Failed to reate swap chain image view");
                 };
             }
+        }
+
+        void createGraphicsPipeline() {
+            auto vert = readFile("./Shaders/vert.spv");
+            auto frag = readFile("Shaders/frag.spv");
+
+            VkShaderModule vertShaderMod = createShaderModule(vert);
+            VkShaderModule fragShaderMod = createShaderModule(frag);
+
+            VkPipelineShaderStageCreateInfo vertShaderStageInfo {};
+            vertShaderStageInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+            vertShaderStageInfo.stage = VK_SHADER_STAGE_VERTEX_BIT;
+            vertShaderStageInfo.module = vertShaderMod;
+            vertShaderStageInfo.pName = "main";
+
+            VkPipelineShaderStageCreateInfo fragShaderStageInfo{};
+            fragShaderStageInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+            fragShaderStageInfo.stage = VK_SHADER_STAGE_FRAGMENT_BIT;
+            fragShaderStageInfo.module = fragShaderMod;
+            fragShaderStageInfo.pName = "main";
+
+            VkPipelineShaderStageCreateInfo shaderStages[] = {vertShaderStageInfo, fragShaderStageInfo};
+
+            vkDestroyShaderModule(mLogicalDevice, vertShaderMod, nullptr);
+            vkDestroyShaderModule(mLogicalDevice, fragShaderMod, nullptr);
+        }
+
+        VkShaderModule createShaderModule(const std::vector<char>& bytes) {
+            VkShaderModuleCreateInfo createInfo {};
+            createInfo.sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO;
+            createInfo.codeSize = bytes.size();
+            createInfo.pCode = reinterpret_cast<const uint32_t*>(bytes.data());
+
+            VkShaderModule shaderModule;
+            if (vkCreateShaderModule(mLogicalDevice, &createInfo, nullptr, &shaderModule) != VK_SUCCESS) {
+                throw std::runtime_error("Failed to create shader module");
+            }
+            return shaderModule;
         }
 
         void mainLoop() {
