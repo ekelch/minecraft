@@ -2,12 +2,10 @@
 #include "SDL3/SDL_events.h"
 #include "SDL3/SDL_init.h"
 #include "SDL3/SDL_log.h"
-#include "SDL3/SDL_surface.h"
 #include "vulkan/vulkan_core.h"
 #include <SDL3/SDL_vulkan.h>
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_video.h>
-#include <__config>
 #include <cstdint>
 #include <cstdio>
 #include <cstdlib>
@@ -19,6 +17,7 @@
 #include <vector>
 #include <vulkan/vulkan.h>
 #include <fstream>
+#include <glm.hpp>
 
 constexpr int SCREEN_WIDTH = 1200;
 constexpr int SCREEN_HEIGHT = 800;
@@ -112,6 +111,7 @@ class HelloTriangleApplication {
         std::vector<VkFence> mFlightFences;
         static constexpr int MAX_FRAMES_IN_FLIGHT = 2;
         uint32_t mCurrentFrame = 0;
+        bool mFramebufferResized = false;
 
         const std::vector<const char*> requiredDeviceExtensions = {
             "VK_KHR_portability_subset",
@@ -124,13 +124,46 @@ class HelloTriangleApplication {
 
             [[nodiscard]] bool isComplete() const {
                 return graphicsFamily.has_value() && presentFamily.has_value();
-            };
+            }
         };
 
         struct SwapChainSupportDetails {
             VkSurfaceCapabilitiesKHR capabilities;
             std::vector<VkSurfaceFormatKHR> formats;
             std::vector<VkPresentModeKHR> presentModes;
+        };
+
+        struct Vertex {
+            glm::vec2 pos;
+            glm::vec3 color;
+
+            static VkVertexInputBindingDescription getBindingDescription() {
+                VkVertexInputBindingDescription description{};
+                description.binding = 0;
+                description.stride = sizeof(Vertex);
+                description.inputRate = VK_VERTEX_INPUT_RATE_VERTEX;
+                return description;
+            }
+
+            static std::array<VkVertexInputAttributeDescription, 2> getAttributeDescriptions() {
+                std::array<VkVertexInputAttributeDescription, 2> attributeDescriptions;
+                attributeDescriptions[0].binding = 0;
+                attributeDescriptions[0].location = 0;
+                attributeDescriptions[0].format = VK_FORMAT_R32G32_SFLOAT;
+                attributeDescriptions[0].offset = offsetof(Vertex, pos);
+
+                attributeDescriptions[1].binding = 0;
+                attributeDescriptions[1].location = 1;
+                attributeDescriptions[1].format = VK_FORMAT_R32G32B32_SFLOAT;
+                attributeDescriptions[1].offset = offsetof(Vertex, color);
+                return attributeDescriptions;
+            }
+        };
+
+        const std::vector<Vertex> vertices = {
+            {{0.0f, -0.5f}, {1.0f, 0.0f, 0.0f}},
+            {{0.5f, 0.5f}, {0.0f, 1.0f, 0.0f}},
+            {{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}}
         };
 
         static bool initSDL() {
@@ -146,7 +179,7 @@ class HelloTriangleApplication {
         }
 
         bool openWindow() {
-            gWindow = SDL_CreateWindow("Vulkan Minecraft", SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_VULKAN);
+            gWindow = SDL_CreateWindow("Vulkan Minecraft", SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_VULKAN | SDL_WINDOW_RESIZABLE);
             if (gWindow == nullptr) {
                 printf("Failed to create window\n%s\n", SDL_GetError());
                 return false;
@@ -471,6 +504,29 @@ class HelloTriangleApplication {
             }
         }
 
+
+
+        void cleanupSwapchain() {
+            for (auto& framebuffer : mSwapchainFrameBuffers) {
+                vkDestroyFramebuffer(mLogicalDevice, framebuffer, nullptr);
+            }
+            for (auto& imageView : mSwapchainViews) {
+                vkDestroyImageView(mLogicalDevice, imageView, nullptr);
+            }
+            vkDestroySwapchainKHR(mLogicalDevice, mSwapChain, nullptr);
+        }
+
+        void recreateSwapchain() {
+            std::cout << "recreating swapchain" <<std::endl;
+            vkDeviceWaitIdle(mLogicalDevice);
+
+            cleanupSwapchain();
+
+            createSwapChain();
+            createSwapChainViews();
+            createFrameBuffers();
+        }
+
         void createRenderPass() {
             VkAttachmentDescription colorAttachment {};
             colorAttachment.format = mSwapFormat;
@@ -542,8 +598,14 @@ class HelloTriangleApplication {
 
             VkPipelineVertexInputStateCreateInfo vertexInput {};
             vertexInput.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
-            vertexInput.vertexAttributeDescriptionCount = 0;
-            vertexInput.vertexBindingDescriptionCount = 0;
+
+            auto bindingDescription = Vertex::getBindingDescription();
+            vertexInput.vertexBindingDescriptionCount = 1;
+            vertexInput.pVertexBindingDescriptions = &bindingDescription;
+
+            auto attributeDescriptions = Vertex::getAttributeDescriptions();
+            vertexInput.vertexAttributeDescriptionCount = attributeDescriptions.size();
+            vertexInput.pVertexAttributeDescriptions = attributeDescriptions.data();
 
             VkPipelineInputAssemblyStateCreateInfo inputAssembly {};
             inputAssembly.sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
@@ -761,6 +823,9 @@ class HelloTriangleApplication {
                     if (e.type == SDL_EVENT_QUIT) {
                         quit = true;
                     }
+                    if (e.type == SDL_EVENT_WINDOW_RESIZED) {
+                        std::cout << "resizing window, w: " << e.window.data1 << " // h: " << e.window.data2 << std::endl;
+                    }
                 }
                 drawFrame();
             }
@@ -769,10 +834,18 @@ class HelloTriangleApplication {
 
         void drawFrame() {
             vkWaitForFences(mLogicalDevice, 1, &mFlightFences[mCurrentFrame], VK_TRUE, UINT64_MAX);
-            vkResetFences(mLogicalDevice, 1, &mFlightFences[mCurrentFrame]);
 
             uint32_t imageIndex;
-            vkAcquireNextImageKHR(mLogicalDevice, mSwapChain, UINT64_MAX, mImageAvailableSemaphores[mCurrentFrame], VK_NULL_HANDLE, &imageIndex);
+            VkResult result = vkAcquireNextImageKHR(mLogicalDevice, mSwapChain, UINT64_MAX, mImageAvailableSemaphores[mCurrentFrame], VK_NULL_HANDLE, &imageIndex);
+            if (result == VK_ERROR_OUT_OF_DATE_KHR || mFramebufferResized) {
+                mFramebufferResized = false;
+                recreateSwapchain();
+                return;
+            }
+            if (result != VK_SUCCESS && result != VK_SUBOPTIMAL_KHR) {
+                throw std::runtime_error("Failed to swapswapchain");
+            }
+            vkResetFences(mLogicalDevice, 1, &mFlightFences[mCurrentFrame]);
 
             vkResetCommandBuffer(mCommandBuffers[mCurrentFrame], 0);
             recordCommandBuffer(mCommandBuffers[mCurrentFrame], imageIndex);
@@ -805,7 +878,13 @@ class HelloTriangleApplication {
             presentInfo.pSwapchains = swapchains;
             presentInfo.pImageIndices = &imageIndex;
 
-            vkQueuePresentKHR(mPresentQueue, &presentInfo);
+            result = vkQueuePresentKHR(mPresentQueue, &presentInfo);
+            if (result == VK_ERROR_OUT_OF_DATE_KHR || result == VK_SUBOPTIMAL_KHR || mFramebufferResized) {
+                mFramebufferResized = false;
+                recreateSwapchain();
+            } else if (result != VK_SUCCESS) {
+                throw std::runtime_error("Failed to queue present");
+            }
             mCurrentFrame = ++mCurrentFrame % MAX_FRAMES_IN_FLIGHT;
         }
 
@@ -817,16 +896,10 @@ class HelloTriangleApplication {
             }
 
             vkDestroyCommandPool(mLogicalDevice, mCommandPool, nullptr);
-            for (auto framebuffer : mSwapchainFrameBuffers) {
-                vkDestroyFramebuffer(mLogicalDevice, framebuffer, nullptr);
-            }
+            cleanupSwapchain();
             vkDestroyPipeline(mLogicalDevice, mGraphicsPipeline, nullptr);
             vkDestroyPipelineLayout(mLogicalDevice, mPipelineLayout, nullptr);
             vkDestroyRenderPass(mLogicalDevice, mRenderPass, nullptr);
-            for (VkImageView iView : mSwapchainViews) {
-                vkDestroyImageView(mLogicalDevice, iView, nullptr);
-            }
-            vkDestroySwapchainKHR(mLogicalDevice, mSwapChain, nullptr);
             vkDestroyDevice(mLogicalDevice, nullptr);
             vkDestroySurfaceKHR(gInstance, mSurface, nullptr);
             vkDestroyInstance(gInstance, nullptr);
